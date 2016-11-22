@@ -1,0 +1,21 @@
+{
+  "name": "seduplat",
+  "version": "0.0.1",
+  "authors": [
+    "Oleg Konyk <oleg.konyk@aol.com>"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-animate": "^1.5.5",
+    "angular-aria": "^1.5.5",
+    "angular-messages": "^1.5.5",
+    "angular-material": "^1.1.0",
+    "angular-route": "~1.5.8",
+    "satellizer": "~0.15.5",
+    "angular-resource": "~1.5.8",
+    "angular-youtube-mb": "~1.3.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.9"
+  }
+}
