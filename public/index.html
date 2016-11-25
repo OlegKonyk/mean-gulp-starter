@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <title>Self-education  platform</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <base href="/">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <link rel="stylesheet" href="front/build/vendor.css"/>
+    <link rel="stylesheet" href="front/build/app.css"/>
+
+    <style type="text/css">
+        
+    </style>
+
+  </head>
+
+  <body ng-app="app" layout="column" ng-cloak>
+
+    <ed-toolbar-main></ed-toolbar-main>
+
+    <div style="max-width: 1200px; margin: 0px auto; position: relative;">
+      <ng-view></ng-view>
+    </div>
+
+    <script src="front/build/vendor.js"></script>
+    <script src="front/build/app.js"></script>
+    <script src="front/build/templates.js"></script>
+
+  </body>
+</html>
