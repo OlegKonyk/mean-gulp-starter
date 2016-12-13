@@ -3,14 +3,14 @@
 (function () {
   'use strict';
 
-  config.$inject = ["$mdThemingProvider", "$mdIconProvider", "$routeProvider", "$locationProvider", "$authProvider", "API_URL", "$httpProvider"];
-  angular.module('app', ['ngRoute', 'ngMaterial', 'ngMessages', 'ngResource', 'satellizer', 'youtube-embed']).config(config).component('edAbout', {
+  config.$inject = ["$mdThemingProvider", "$mdIconProvider", "$routeProvider", "$locationProvider", "API_URL"];
+  angular.module('app', ['ngMaterial', 'ngRoute']).config(config).component('edAbout', {
     template: '<md-content class="md-padding"><h1>ABOUT</h1></md-content>'
   }).component('edHome', {
     template: '<md-content class="md-padding"><ed-hero></ed-hero></md-content>'
   }).constant('API_URL', 'http://localhost:7777/');
 
-  function config($mdThemingProvider, $mdIconProvider, $routeProvider, $locationProvider, $authProvider, API_URL, $httpProvider) {
+  function config($mdThemingProvider, $mdIconProvider, $routeProvider, $locationProvider, API_URL) {
     "ngInject";
 
     $locationProvider.html5Mode(true);

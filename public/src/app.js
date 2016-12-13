@@ -1,7 +1,7 @@
 (function() {
   'use strict';
   angular
-  .module('app', ['ngRoute', 'ngMaterial', 'ngMessages', 'ngResource', 'satellizer', 'youtube-embed'])
+  .module('app', ['ngMaterial', 'ngRoute'])
   .config(config)
   .component('edAbout', {
     template: '<md-content class="md-padding"><h1>ABOUT</h1></md-content>'
@@ -12,7 +12,7 @@
   .constant('API_URL', 'http://localhost:7777/');
 
   function config($mdThemingProvider, $mdIconProvider,
-                 $routeProvider, $locationProvider, $authProvider, API_URL, $httpProvider) {
+                 $routeProvider, $locationProvider, API_URL) {
     "ngInject";
     $locationProvider.html5Mode(true);
 
